@@ -5,9 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_Eclipse_Phase"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Accueil" Height="446.312" Width="800">
     <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="338,33,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labAppli" Content="Projet Eclipse Phase Création" HorizontalAlignment="Left" Margin="229,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:Name="txtIntro" HorizontalAlignment="Left" Height="42" Margin="23,83,0,0" TextWrapping="Wrap" Text="Bienvenue dans notre application de création de personnage pour le jeu de rôle Eclipse Phase. Cet outil est destiné aux Maitres de jeu ainsi qu'aux joueurs de l'association Légendes à Nancy." VerticalAlignment="Top" Width="734" FontSize="14"/>
+        <TextBlock x:Name="txtConnex" HorizontalAlignment="Left" Height="39" Margin="23,141,0,0" TextWrapping="Wrap" Text="Veuillez vous munir de votre identifiant et de votre mot de passe pour remplir les champs ci-dessous et accéder ainsi à l'application." VerticalAlignment="Top" Width="734" FontSize="14"/>
+        <Label x:Name="labIdentifiant" Content="Identifiant : " HorizontalAlignment="Left" Margin="231,216,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="txtIdentifiant" HorizontalAlignment="Left" Height="23" Margin="398,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="194" FontSize="16"/>
+        <Label x:Name="labMdp" Content="Mot de passe : " HorizontalAlignment="Left" Margin="223,270,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="124"/>
+        <TextBox x:Name="txtMdp" HorizontalAlignment="Left" Height="23" Margin="398,274,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="194" FontSize="16"/>
+        <Button x:Name="btnConnex" Content="Connexion" HorizontalAlignment="Left" Height="41" Margin="296,335,0,0" VerticalAlignment="Top" Width="197" FontSize="16"/>
 
     </Grid>
 </Window>

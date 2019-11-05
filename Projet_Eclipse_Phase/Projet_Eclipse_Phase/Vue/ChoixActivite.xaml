@@ -1,0 +1,19 @@
+﻿<Window x:Class="Projet_Eclipse_Phase.Vue.ChoixActivite"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue"
+        mc:Ignorable="d"
+        Title="ChoixActivite" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="labTitre" Content="Options de l'application" HorizontalAlignment="Left" Margin="247,25,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:Name="txtChoixAct" HorizontalAlignment="Left" Margin="45,88,0,0" TextWrapping="Wrap" Text="Veuillez choisir l'action que vous souhaitez effectuer dans l'application : " VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtGestPerso" HorizontalAlignment="Left" Height="44" Margin="89,136,0,0" TextWrapping="Wrap" Text="Choisissez cette option pour vous permettre de créer, modifier, supprimer ou afficher un personnage." VerticalAlignment="Top" Width="345" FontSize="14" BorderBrush="White"/>
+        <Button x:Name="btnGestPerso" Content="Personnage" HorizontalAlignment="Left" Height="44" Margin="473,136,0,0" VerticalAlignment="Top" Width="169" FontSize="16"/>
+        <TextBlock x:Name="txtGestAppli" HorizontalAlignment="Left" Height="59" Margin="89,225,0,0" TextWrapping="Wrap" Text="Choisissez cette option pour vous permettre d'enrichir la base de données avec les évolutions du jeu ou apportées par le Maitre de jeu." VerticalAlignment="Top" Width="345" FontSize="14"/>
+        <Button x:Name="btnGestAppli" Content="Enrichissement" HorizontalAlignment="Left" Height="44" Margin="473,233,0,0" VerticalAlignment="Top" Width="169" FontSize="16"/>
+        <Button x:Name="btnDeconnexion" Content="Déconnexion" HorizontalAlignment="Left" Height="42" Margin="328,328,0,0" VerticalAlignment="Top" Width="141" FontSize="16"/>
+
+    </Grid>
+</Window>

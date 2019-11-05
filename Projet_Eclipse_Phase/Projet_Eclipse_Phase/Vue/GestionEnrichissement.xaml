@@ -1,0 +1,44 @@
+﻿<Window x:Class="Projet_Eclipse_Phase.Vue.GestionEnrichissement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue"
+        mc:Ignorable="d"
+        Title="GestionEnrichissement" Height="1601.065" Width="800">
+    <ScrollViewer>
+        <Grid>
+            <Label x:Name="labGestAppli" Content="Gestionnaire de l'application" HorizontalAlignment="Left" Margin="223,22,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <TextBlock x:Name="txtGestAppli" HorizontalAlignment="Left" Margin="49,80,0,0" TextWrapping="Wrap" Text="Vous vous trouvez dans le gestionnaire de l'application. Cette partie vous permet d'enrichir la base de données avec de nouveaux éléments issus des extensions du jeu ou des innovations apportées par le Maitre de jeu en fonction  de ses idées." VerticalAlignment="Top" FontSize="14" Height="64" Width="695"/>
+            <TextBlock x:Name="txtMuse" HorizontalAlignment="Left" Height="48" Margin="120,172,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des muses du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnMuse" Content="Muses" HorizontalAlignment="Left" Margin="453,175,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtMorphe" HorizontalAlignment="Left" Height="48" Margin="120,259,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des morphes du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnMorphe" Content="Morphes" HorizontalAlignment="Left" Margin="453,262,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtArme" HorizontalAlignment="Left" Height="48" Margin="120,347,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des armes du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnArme" Content="Armes" HorizontalAlignment="Left" Margin="453,350,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtArmure" HorizontalAlignment="Left" Height="48" Margin="120,437,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des armures du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnArmure" Content="Armures" HorizontalAlignment="Left" Margin="453,440,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtEquip" HorizontalAlignment="Left" Height="48" Margin="120,533,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des équipements du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnEquip" Content="Équipements" HorizontalAlignment="Left" Margin="453,536,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtAspect" HorizontalAlignment="Left" Height="48" Margin="120,626,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des aspects du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnAspect" Content="Aspects" HorizontalAlignment="Left" Margin="453,629,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtImplant" HorizontalAlignment="Left" Height="48" Margin="120,719,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des implants du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnImplant" Content="Implants" HorizontalAlignment="Left" Margin="453,722,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtReput" HorizontalAlignment="Left" Height="48" Margin="120,811,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des réputations du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnReput" Content="Réputations" HorizontalAlignment="Left" Margin="453,814,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtComp" HorizontalAlignment="Left" Height="48" Margin="120,904,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des compétences du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnComp" Content="Compétences" HorizontalAlignment="Left" Margin="453,907,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtOptArme" HorizontalAlignment="Left" Height="61" Margin="120,994,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des options d'armes du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnOptArme" Content="Options d'arme" HorizontalAlignment="Left" Margin="453,1004,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtOptArmure" HorizontalAlignment="Left" Height="61" Margin="120,1094,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des options d'armure du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnOptArmure" Content="Options d'armure" HorizontalAlignment="Left" Margin="453,1104,0,0" VerticalAlignment="Top" Width="180" Height="39" FontSize="16"/>
+            <TextBlock x:Name="txtPassePsi" HorizontalAlignment="Left" Height="49" Margin="120,1201,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des passes psi du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnPassePsi" Content="Passes Psi" HorizontalAlignment="Left" Margin="453,1206,0,0" VerticalAlignment="Top" Width="180" Height="38" FontSize="16"/>
+            <TextBlock x:Name="txtVehi" HorizontalAlignment="Left" Height="49" Margin="120,1299,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des véhicules du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnVehi" Content="Véhicules" HorizontalAlignment="Left" Margin="453,1304,0,0" VerticalAlignment="Top" Width="180" Height="38" FontSize="16"/>
+            <TextBlock x:Name="txtRobot" HorizontalAlignment="Left" Height="49" Margin="120,1391,0,0" TextWrapping="Wrap" Text="Cliquez sur ce bouton vous permettra de gérer l'ensemble des robots du jeu" VerticalAlignment="Top" Width="260" FontSize="14"/>
+            <Button x:Name="btnRobot" Content="Robots" HorizontalAlignment="Left" Margin="453,1396,0,0" VerticalAlignment="Top" Width="180" Height="38" FontSize="16"/>
+            <Button x:Name="btnRetour" Content="Retour" HorizontalAlignment="Left" Height="41" Margin="308,1489,0,0" VerticalAlignment="Top" Width="188" FontSize="16"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

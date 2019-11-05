@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Vue\ChoixActivite.xaml.cs">
+      <DependentUpon>ChoixActivite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\GestionClient.xaml.cs">
+      <DependentUpon>GestionClient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\GestionEnrichissement.xaml.cs">
+      <DependentUpon>GestionEnrichissement.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +76,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Vue\ChoixActivite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\GestionClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\GestionEnrichissement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controlleur\" />
+    <Folder Include="Modèle\" />
+    <Folder Include="Vue\FormEnrichissementBdd\" />
+    <Folder Include="Vue\FormPersonnage\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
