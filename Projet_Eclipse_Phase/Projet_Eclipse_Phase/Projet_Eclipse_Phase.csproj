@@ -58,6 +58,15 @@
     <Compile Include="Vue\ChoixActivite.xaml.cs">
       <DependentUpon>ChoixActivite.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudArme.xaml.cs">
+      <DependentUpon>CrudArme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudMorphe.xaml.cs">
+      <DependentUpon>CrudMorphe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudMuse.xaml.cs">
+      <DependentUpon>CrudMuse.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vue\GestionClient.xaml.cs">
       <DependentUpon>GestionClient.xaml</DependentUpon>
     </Compile>
@@ -77,6 +86,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Vue\ChoixActivite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudArme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudMorphe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudMuse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -118,7 +139,6 @@
   <ItemGroup>
     <Folder Include="Controlleur\" />
     <Folder Include="Modèle\" />
-    <Folder Include="Vue\FormEnrichissementBdd\" />
     <Folder Include="Vue\FormPersonnage\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
