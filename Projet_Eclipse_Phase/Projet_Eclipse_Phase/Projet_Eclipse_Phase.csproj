@@ -61,11 +61,29 @@
     <Compile Include="Vue\FormEnrichissementBdd\CrudArme.xaml.cs">
       <DependentUpon>CrudArme.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudArmure.xaml.cs">
+      <DependentUpon>CrudArmure.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudAspect.xaml.cs">
+      <DependentUpon>CrudAspect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudCompetence.xaml.cs">
+      <DependentUpon>CrudCompetence.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudEquipement.xaml.cs">
+      <DependentUpon>CrudEquipement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudImplant.xaml.cs">
+      <DependentUpon>CrudImplant.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vue\FormEnrichissementBdd\CrudMorphe.xaml.cs">
       <DependentUpon>CrudMorphe.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vue\FormEnrichissementBdd\CrudMuse.xaml.cs">
       <DependentUpon>CrudMuse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudReputation.xaml.cs">
+      <DependentUpon>CrudReputation.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vue\GestionClient.xaml.cs">
       <DependentUpon>GestionClient.xaml</DependentUpon>
@@ -93,11 +111,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudArmure.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudAspect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudCompetence.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudEquipement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudImplant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Vue\FormEnrichissementBdd\CrudMorphe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Vue\FormEnrichissementBdd\CrudMuse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudReputation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

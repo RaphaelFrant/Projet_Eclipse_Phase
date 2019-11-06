@@ -1,0 +1,54 @@
+﻿<Window x:Class="Projet_Eclipse_Phase.Vue.FormEnrichissementBdd.CrudReputation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormEnrichissementBdd"
+        mc:Ignorable="d"
+        Title="CrudReputation" Height="885.246" Width="800">
+    <ScrollViewer>
+        <Grid Width="772">
+            <Label x:Name="labGestReput" Content="Gestion des Réputations" HorizontalAlignment="Left" Margin="283,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <TextBlock x:Name="txtGestReput" HorizontalAlignment="Left" Margin="43,83,0,0" TextWrapping="Wrap" Text="Dans cette partie, vous pouvez créer, modifier ou supprimer les équipements disponibles pour les personnages." VerticalAlignment="Top" FontSize="14"/>
+
+            <!--Boite de création de réputation-->
+            <GroupBox x:Name="grpboxCreaReput" Header="Création de réputation" HorizontalAlignment="Left" Height="191" Margin="43,127,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridCreaReput" HorizontalAlignment="Left" Height="155" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labNomCreaReput" Content="Nom: " HorizontalAlignment="Left" Margin="78,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomCreaReput" HorizontalAlignment="Left" Height="23" Margin="143,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labGrpCreaReput" Content="Groupes Associés:" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtGrpCreaReput" HorizontalAlignment="Left" Height="25" Margin="143,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="501" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnAjoutCreaReput" Content="Ajouter" HorizontalAlignment="Left" Margin="286,112,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de modification de réputation-->
+            <GroupBox x:Name="grpboxModifReput" Header="Modification de réputation" HorizontalAlignment="Left" Height="256" Margin="43,337,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridModifReput" HorizontalAlignment="Left" Height="222" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixModifReput" Content="Choisissez une réputation à modifier:" HorizontalAlignment="Left" Margin="12,12,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixModifReput" HorizontalAlignment="Left" Margin="274,12,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdModifReput" HorizontalAlignment="Left" Height="23" Margin="532,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomModifReput" Content="Nom: " HorizontalAlignment="Left" Margin="86,66,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomModifReput" HorizontalAlignment="Left" Height="23" Margin="151,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labGrpModifReput" Content="Groupes Associés:" HorizontalAlignment="Left" Margin="18,120,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtGrpModifReput" HorizontalAlignment="Left" Height="25" Margin="151,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="501" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnModifReput" Content="Enregistrer" HorizontalAlignment="Left" Margin="287,173,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+
+            <!--Boite de suppression de réputation-->
+            <GroupBox x:Name="grpboxSupprReput" Header="Suppression de réputation" HorizontalAlignment="Left" Height="150" Margin="43,617,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridSupprReput" HorizontalAlignment="Left" Height="110" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixSupprReput" Content="Choisissez une réputation à supprimer:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixSupprReput" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdSupprReput" HorizontalAlignment="Left" Height="23" Margin="539,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomSupprReput" Content="Nom: " HorizontalAlignment="Left" Margin="20,61,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomSupprReput" HorizontalAlignment="Left" Height="23" Margin="75,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnSupprReput" Content="Supprimer" HorizontalAlignment="Left" Margin="412,56,0,0" VerticalAlignment="Top" Width="141" FontSize="14" FontWeight="Normal" Height="39"/>
+                </Grid>
+            </GroupBox>
+            <Button x:Name="RetourGestAppli" Content="Retour" HorizontalAlignment="Left" Height="39" Margin="318,792,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

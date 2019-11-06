@@ -1,0 +1,61 @@
+﻿<Window x:Class="Projet_Eclipse_Phase.Vue.FormEnrichissementBdd.CrudCompetence"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormEnrichissementBdd"
+        mc:Ignorable="d"
+        Title="CrudCompetence" Height="1133.299" Width="800">
+    <ScrollViewer>
+        <Grid Width="772">
+            <Label x:Name="labGestComp" Content="Gestion des Compétences" HorizontalAlignment="Left" Margin="283,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <TextBlock x:Name="txtGestComp" HorizontalAlignment="Left" Margin="43,83,0,0" TextWrapping="Wrap" Text="Dans cette partie, vous pouvez créer, modifier ou supprimer les compétences disponibles pour les personnages." VerticalAlignment="Top" FontSize="14"/>
+
+            <!--Boite de création de compétences-->
+            <GroupBox x:Name="grpboxCreaComp" Header="Création de compétences" HorizontalAlignment="Left" Height="322" Margin="43,127,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridCreaComp" HorizontalAlignment="Left" Height="281" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labNomCreaComp" Content="Nom: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomCreaComp" HorizontalAlignment="Left" Height="23" Margin="65,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labAptCreaComp" Content="Aptitude:" HorizontalAlignment="Left" Margin="448,14,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtAptCreaComp" HorizontalAlignment="Left" Height="29" Margin="525,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="87" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDescCreaComp" Content="Description:" HorizontalAlignment="Left" Margin="204,57,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDescCreaComp" HorizontalAlignment="Left" Height="131" Margin="204,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="460" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labTypeCreaComp" Content="Type de compétences:" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtTypeCreaComp" HorizontalAlignment="Left" Height="23" Margin="10,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161" FontSize="14"/>
+                    <Button x:Name="btnAjoutCreaComp" Content="Ajouter" HorizontalAlignment="Left" Margin="297,229,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de modification de compétence-->
+            <GroupBox x:Name="grpboxModifComp" Header="Modification de compétence" HorizontalAlignment="Left" Height="396" Margin="43,464,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridModifComp" HorizontalAlignment="Left" Height="350" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixModifComp" Content="Choisissez une compétence à modifier:" HorizontalAlignment="Left" Margin="12,12,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixModifComp" HorizontalAlignment="Left" Margin="277,12,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdModifComp" HorizontalAlignment="Left" Height="23" Margin="535,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomModifComp" Content="Nom: " HorizontalAlignment="Left" Margin="16,62,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomModifComp" HorizontalAlignment="Left" Height="23" Margin="71,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labAptModifComp" Content="Aptitude:" HorizontalAlignment="Left" Margin="454,66,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtAptModifComp" HorizontalAlignment="Left" Height="29" Margin="531,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="87" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDescModifComp" Content="Description:" HorizontalAlignment="Left" Margin="210,109,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDescModifComp" HorizontalAlignment="Left" Height="131" Margin="210,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="460" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labTypeModifComp" Content="Type de compétences:" HorizontalAlignment="Left" Margin="16,109,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtTypeModifComp" HorizontalAlignment="Left" Height="23" Margin="16,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161" FontSize="14"/>
+                    <Button x:Name="btnModifComp" Content="Enregistrer" HorizontalAlignment="Left" Margin="296,299,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de suppression de compétence-->
+            <GroupBox x:Name="grpboxSupprComp" Header="Suppression de compétences" HorizontalAlignment="Left" Height="150" Margin="43,875,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridSupprComp" HorizontalAlignment="Left" Height="110" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixSupprComp" Content="Choisissez une compétence à supprimer:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixSupprComp" HorizontalAlignment="Left" Margin="291,10,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdSupprComp" HorizontalAlignment="Left" Height="23" Margin="542,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomSupprComp" Content="Nom: " HorizontalAlignment="Left" Margin="20,61,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomSupprComp" HorizontalAlignment="Left" Height="23" Margin="75,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnSupprComp" Content="Supprimer" HorizontalAlignment="Left" Margin="412,56,0,0" VerticalAlignment="Top" Width="141" FontSize="14" FontWeight="Normal" Height="39"/>
+                </Grid>
+            </GroupBox>
+            <Button x:Name="RetourGestAppli" Content="Retour" HorizontalAlignment="Left" Height="39" Margin="319,1041,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+        </Grid>
+    </ScrollViewer>
+</Window>
