@@ -8,7 +8,7 @@
         Title="CrudCompetence" Height="1133.299" Width="800">
     <ScrollViewer>
         <Grid Width="772">
-            <Label x:Name="labGestComp" Content="Gestion des Compétences" HorizontalAlignment="Left" Margin="283,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <Label x:Name="labGestComp" Content="Gestion des Compétences" HorizontalAlignment="Left" Margin="242,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
             <TextBlock x:Name="txtGestComp" HorizontalAlignment="Left" Margin="43,83,0,0" TextWrapping="Wrap" Text="Dans cette partie, vous pouvez créer, modifier ou supprimer les compétences disponibles pour les personnages." VerticalAlignment="Top" FontSize="14"/>
 
             <!--Boite de création de compétences-->

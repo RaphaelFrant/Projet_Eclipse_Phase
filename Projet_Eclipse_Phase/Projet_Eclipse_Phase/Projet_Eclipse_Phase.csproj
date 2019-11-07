@@ -73,6 +73,12 @@
     <Compile Include="Vue\FormEnrichissementBdd\CrudEquipement.xaml.cs">
       <DependentUpon>CrudEquipement.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudFaction.xaml.cs">
+      <DependentUpon>CrudFaction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudHistorique.xaml.cs">
+      <DependentUpon>CrudHistorique.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vue\FormEnrichissementBdd\CrudImplant.xaml.cs">
       <DependentUpon>CrudImplant.xaml</DependentUpon>
     </Compile>
@@ -82,8 +88,26 @@
     <Compile Include="Vue\FormEnrichissementBdd\CrudMuse.xaml.cs">
       <DependentUpon>CrudMuse.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudOptionArme.xaml.cs">
+      <DependentUpon>CrudOptionArme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudOptionArmure.xaml.cs">
+      <DependentUpon>CrudOptionArmure.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vue\FormEnrichissementBdd\CrudReputation.xaml.cs">
       <DependentUpon>CrudReputation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudRobot.xaml.cs">
+      <DependentUpon>CrudRobot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudTypeArme.xaml.cs">
+      <DependentUpon>CrudTypeArme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrudVehicule.xaml.cs">
+      <DependentUpon>CrudVehicule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\FormEnrichissementBdd\CrusPassePsi.xaml.cs">
+      <DependentUpon>CrusPassePsi.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vue\GestionClient.xaml.cs">
       <DependentUpon>GestionClient.xaml</DependentUpon>
@@ -127,6 +151,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudFaction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudHistorique.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Vue\FormEnrichissementBdd\CrudImplant.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -139,7 +171,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudOptionArme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudOptionArmure.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Vue\FormEnrichissementBdd\CrudReputation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudRobot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudTypeArme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrudVehicule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormEnrichissementBdd\CrusPassePsi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,78 @@
+﻿<Window x:Class="Projet_Eclipse_Phase.Vue.FormEnrichissementBdd.CrudRobot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormEnrichissementBdd"
+        mc:Ignorable="d"
+        Title="CrudRobot" Height="1109.762" Width="800">
+    <ScrollViewer>
+        <Grid Width="772">
+            <Label x:Name="labGestRob" Content="Gestion des Robots" HorizontalAlignment="Left" Margin="283,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <TextBlock x:Name="txtGestRob" HorizontalAlignment="Left" Margin="43,83,0,0" TextWrapping="Wrap" Text="Dans cette partie, vous pouvez créer, modifier ou supprimer les robots disponibles pour les personnages." VerticalAlignment="Top" FontSize="14"/>
+
+            <!--Boite de création de robots-->
+            <GroupBox x:Name="grpboxCreaRob" Header="Création de robots" HorizontalAlignment="Left" Height="325" Margin="43,127,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridCreaRob" HorizontalAlignment="Left" Height="287" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labNomCreaRob" Content="Nom: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomCreaRob" HorizontalAlignment="Left" Height="23" Margin="65,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="257" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labEndCreaRob" Content="END:" HorizontalAlignment="Left" Margin="338,11,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtEndCreaRob" HorizontalAlignment="Left" Height="23" Margin="386,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labSbCreaRob" Content="SB:" HorizontalAlignment="Left" Margin="447,11,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtSbCreaRob" HorizontalAlignment="Left" Height="23" Margin="483,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49" FontWeight="Normal"/>
+                    <Label x:Name="labProtecCreaRob" Content="Armure:" HorizontalAlignment="Left" Margin="547,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtProtecCreaRob" HorizontalAlignment="Left" Height="23" Margin="616,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labSystMobCreaRob" Content="Système Mobilité:" HorizontalAlignment="Left" Margin="6,51,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtNbrePassCreaRob" HorizontalAlignment="Left" Height="23" Margin="139,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="193" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labVdeCreaRob" Content="Vitesse:" HorizontalAlignment="Left" Margin="343,54,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtVdeCreaRob" HorizontalAlignment="Left" Height="23" Margin="408,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labVitMaxCreaRob" Content="Vitesse max:" HorizontalAlignment="Left" Margin="485,54,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtVitMaxCreaRob" HorizontalAlignment="Left" Height="23" Margin="582,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labAmeCreaRob" Content="Améliorations:" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtAmeCreaRob" HorizontalAlignment="Left" Height="128" Margin="121,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="555" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnAjoutCreaRob" Content="Ajouter" HorizontalAlignment="Left" Margin="298,244,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de modification de robots-->
+            <GroupBox x:Name="grpboxModifRob" Header="Modification de robots" HorizontalAlignment="Left" Height="363" Margin="43,473,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridModifRob" HorizontalAlignment="Left" Height="328" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixModifRob" Content="Choisissez un robot à modifier:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixModifRob" HorizontalAlignment="Left" Margin="246,10,0,0" VerticalAlignment="Top" Width="247" Height="29" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtIdModifRob" HorizontalAlignment="Left" Height="23" Margin="518,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labNomModifRob" Content="Nom: " HorizontalAlignment="Left" Margin="8,53,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomModifRob" HorizontalAlignment="Left" Height="23" Margin="63,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="257" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labEndModifRob" Content="END:" HorizontalAlignment="Left" Margin="336,54,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtEndModifRob" HorizontalAlignment="Left" Height="23" Margin="384,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labSbModifRob" Content="SB:" HorizontalAlignment="Left" Margin="445,54,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtSbModifRob" HorizontalAlignment="Left" Height="23" Margin="481,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49" FontWeight="Normal"/>
+                    <Label x:Name="labProtecModifRob" Content="Armure:" HorizontalAlignment="Left" Margin="545,53,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtProtecModifRob" HorizontalAlignment="Left" Height="23" Margin="614,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labSystMobModifRob" Content="Système Mobilité:" HorizontalAlignment="Left" Margin="4,94,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtNbrePassModifRob" HorizontalAlignment="Left" Height="23" Margin="137,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="193" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labVdeModifRob" Content="Vitesse:" HorizontalAlignment="Left" Margin="341,97,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtVdeModifRob" HorizontalAlignment="Left" Height="23" Margin="406,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labVitMaxModifRob" Content="Vitesse max:" HorizontalAlignment="Left" Margin="483,97,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtVitMaxModifRob" HorizontalAlignment="Left" Height="23" Margin="580,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labAmeModifRob" Content="Améliorations:" HorizontalAlignment="Left" Margin="8,141,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtAmeModifRob" HorizontalAlignment="Left" Height="128" Margin="119,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="555" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnModifRob" Content="Enregistrer" HorizontalAlignment="Left" Margin="294,285,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de suppression de robots-->
+            <GroupBox x:Name="grpboxSupprRob" Header="Suppression de robots" HorizontalAlignment="Left" Height="150" Margin="43,858,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridSupprRob" HorizontalAlignment="Left" Height="110" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixSupprRob" Content="Choisissez un robot à supprimer:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixSupprRob" HorizontalAlignment="Left" Margin="240,10,0,0" VerticalAlignment="Top" Width="244" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdSupprRob" HorizontalAlignment="Left" Height="23" Margin="517,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomSupprRob" Content="Nom: " HorizontalAlignment="Left" Margin="20,61,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomSupprRob" HorizontalAlignment="Left" Height="23" Margin="75,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="223" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnSupprRob" Content="Supprimer" HorizontalAlignment="Left" Margin="412,56,0,0" VerticalAlignment="Top" Width="141" FontSize="14" FontWeight="Normal" Height="39"/>
+                </Grid>
+            </GroupBox>
+            <Button x:Name="RetourGestAppli" Content="Retour" HorizontalAlignment="Left" Height="39" Margin="321,1024,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+
+        </Grid>
+    </ScrollViewer>
+</Window>

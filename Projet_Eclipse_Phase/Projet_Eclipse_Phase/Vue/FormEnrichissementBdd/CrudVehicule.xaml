@@ -1,0 +1,82 @@
+﻿<Window x:Class="Projet_Eclipse_Phase.Vue.FormEnrichissementBdd.CrudVehicule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormEnrichissementBdd"
+        mc:Ignorable="d"
+        Title="CrudVehicule" Height="918.799" Width="800">
+    <ScrollViewer>
+        <Grid Width="772">
+            <Label x:Name="labGestVehi" Content="Gestion des Véhicules" HorizontalAlignment="Left" Margin="283,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <TextBlock x:Name="txtGestVehi" HorizontalAlignment="Left" Margin="43,83,0,0" TextWrapping="Wrap" Text="Dans cette partie, vous pouvez créer, modifier ou supprimer les véhicules disponibles pour les personnages." VerticalAlignment="Top" FontSize="14"/>
+
+            <!--Boite de création de véhicules-->
+            <GroupBox x:Name="grpboxCreaVehi" Header="Création de véhicule" HorizontalAlignment="Left" Height="221" Margin="43,127,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridCreaVehi" HorizontalAlignment="Left" Height="186" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labNomCreaVehi" Content="Nom: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomCreaVehi" HorizontalAlignment="Left" Height="23" Margin="65,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="257" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labEndCreaVehi" Content="END:" HorizontalAlignment="Left" Margin="338,11,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtEndCreaVehi" HorizontalAlignment="Left" Height="23" Margin="386,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labSbCreaVehi" Content="SB:" HorizontalAlignment="Left" Margin="447,11,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtSbCreaVehi" HorizontalAlignment="Left" Height="23" Margin="483,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49" FontWeight="Normal"/>
+                    <Label x:Name="labProtecCreaVehi" Content="Armure:" HorizontalAlignment="Left" Margin="547,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtProtecCreaVehi" HorizontalAlignment="Left" Height="23" Margin="616,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labTypeCreaVehi" Content="Type:" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtTypeCreaVehi" HorizontalAlignment="Left" Height="23" Margin="65,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labNbrePassCreaVehi" Content="Nombre de passagers:" HorizontalAlignment="Left" Margin="291,51,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtNbrePassCreaVehi" HorizontalAlignment="Left" Height="23" Margin="456,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="193" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labManierCreaVehi" Content="Maniabilité:" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtManierCreaVehi" HorizontalAlignment="Left" Height="23" Margin="103,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labVdeCreaVehi" Content="Vitesse:" HorizontalAlignment="Left" Margin="316,95,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtVdeCreaVehi" HorizontalAlignment="Left" Height="23" Margin="381,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labVitMaxCreaVehi" Content="Vitesse max:" HorizontalAlignment="Left" Margin="475,95,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtVitMaxCreaVehi" HorizontalAlignment="Left" Height="23" Margin="572,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnAjoutCreaVehi" Content="Ajouter" HorizontalAlignment="Left" Margin="291,143,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de modification de véhicule-->
+            <GroupBox x:Name="grpboxModifVehi" Header="Modification de véhicule" HorizontalAlignment="Left" Height="275" Margin="43,367,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridModifVehi" HorizontalAlignment="Left" Height="237" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixModifVehi" Content="Choisissez un véhicule à modifier:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixModifVehi" HorizontalAlignment="Left" Margin="246,10,0,0" VerticalAlignment="Top" Width="247" Height="29" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtIdModifVehi" HorizontalAlignment="Left" Height="23" Margin="518,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labNomModifVehi" Content="Nom: " HorizontalAlignment="Left" Margin="11,55,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomModifVehi" HorizontalAlignment="Left" Height="23" Margin="66,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="257" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labEndModifVehie" Content="END:" HorizontalAlignment="Left" Margin="339,56,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtEndModifVehi" HorizontalAlignment="Left" Height="23" Margin="387,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labSbModifVehi" Content="SB:" HorizontalAlignment="Left" Margin="448,56,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtSbModifVehi" HorizontalAlignment="Left" Height="23" Margin="484,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49" FontWeight="Normal"/>
+                    <Label x:Name="labProtecModifVehi" Content="Armure:" HorizontalAlignment="Left" Margin="548,55,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtProtecModifVehi" HorizontalAlignment="Left" Height="23" Margin="617,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labTypeModifVehi" Content="Type:" HorizontalAlignment="Left" Margin="11,96,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtTypeModifVehi" HorizontalAlignment="Left" Height="23" Margin="66,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labNbrePassModifVehi" Content="Nombre de passagers:" HorizontalAlignment="Left" Margin="292,96,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtNbrePassModifVehi" HorizontalAlignment="Left" Height="23" Margin="457,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="193" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labManierModifVehi" Content="Maniabilité:" HorizontalAlignment="Left" Margin="11,140,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtManiervVehi" HorizontalAlignment="Left" Height="23" Margin="104,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labVdeModifVehi" Content="Vitesse:" HorizontalAlignment="Left" Margin="317,140,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtVdeModifVehi" HorizontalAlignment="Left" Height="23" Margin="382,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="72" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labVitMaxModifVehi" Content="Vitesse max:" HorizontalAlignment="Left" Margin="476,140,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtVitMaxModifVehi" HorizontalAlignment="Left" Height="23" Margin="573,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnModifVehi" Content="Enregistrer" HorizontalAlignment="Left" Margin="292,194,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de suppression de véhicule-->
+            <GroupBox x:Name="grpboxSupprVehi" Header="Suppression de véhicules" HorizontalAlignment="Left" Height="150" Margin="43,666,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridSupprVehi" HorizontalAlignment="Left" Height="110" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixSupprVehi" Content="Choisissez un véhicule à supprimer:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixSupprVehi" HorizontalAlignment="Left" Margin="257,10,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdSupprVehi" HorizontalAlignment="Left" Height="23" Margin="517,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomSupprVehi" Content="Nom: " HorizontalAlignment="Left" Margin="20,61,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomSupprVehi" HorizontalAlignment="Left" Height="23" Margin="75,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="223" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnSupprVehi" Content="Supprimer" HorizontalAlignment="Left" Margin="412,56,0,0" VerticalAlignment="Top" Width="141" FontSize="14" FontWeight="Normal" Height="39"/>
+                </Grid>
+            </GroupBox>
+            <Button x:Name="RetourGestAppli" Content="Retour" HorizontalAlignment="Left" Height="39" Margin="320,835,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+
+        </Grid>
+    </ScrollViewer>
+</Window>

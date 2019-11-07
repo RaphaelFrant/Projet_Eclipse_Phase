@@ -1,0 +1,57 @@
+﻿<Window x:Class="Projet_Eclipse_Phase.Vue.FormEnrichissementBdd.CrudOptionArme"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormEnrichissementBdd"
+        mc:Ignorable="d"
+        Title="CrudOptionArme" Height="1158.197" Width="800">
+    <ScrollViewer>
+        <Grid Width="772">
+            <Label x:Name="labGestOptArme" Content="Gestion des Options d'arme" HorizontalAlignment="Left" Margin="242,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <TextBlock x:Name="txtGestOptArme" HorizontalAlignment="Left" Margin="43,83,0,0" TextWrapping="Wrap" Text="Dans cette partie, vous pouvez créer, modifier ou supprimer les options d'arme disponibles pour les personnages." VerticalAlignment="Top" FontSize="14"/>
+
+            <!--Boite de création d'option d'arme-->
+            <GroupBox x:Name="grpboxCreaOptArme" Header="Création d'option d'arme" HorizontalAlignment="Left" Height="322" Margin="43,127,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridCreaOptArme" HorizontalAlignment="Left" Height="281" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labNomCreaOptArme" Content="Nom: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomCreaOptArme" HorizontalAlignment="Left" Height="23" Margin="65,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labCoutCreaOptArme" Content="Coût:" HorizontalAlignment="Left" Margin="448,14,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtCoutCreaOptArme" HorizontalAlignment="Left" Height="29" Margin="498,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDescCreaOptArme" Content="Description:" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDescCreaOptArme" HorizontalAlignment="Left" Height="151" Margin="104,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="560" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnAjoutCreaOptArme" Content="Ajouter" HorizontalAlignment="Left" Margin="297,229,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de modification d'option d'arme -->
+            <GroupBox x:Name="grpboxModifOptArme" Header="Modification d'option d'arme" HorizontalAlignment="Left" Height="396" Margin="43,464,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridModifOptArme" HorizontalAlignment="Left" Height="350" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixModifOptArme" Content="Choisissez une option d'arme à modifier:" HorizontalAlignment="Left" Margin="12,12,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixModifOptArme" HorizontalAlignment="Left" Margin="296,12,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdModifOptArme" HorizontalAlignment="Left" Height="23" Margin="540,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomModifOptArme" Content="Nom: " HorizontalAlignment="Left" Margin="16,62,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomModifOptArme" HorizontalAlignment="Left" Height="23" Margin="71,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labCoutModifOptArme" Content="Coût:" HorizontalAlignment="Left" Margin="454,66,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtCoutModifOptArme" HorizontalAlignment="Left" Height="29" Margin="504,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDescModifOptArme" Content="Description:" HorizontalAlignment="Left" Margin="16,109,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDescModifOptArme" HorizontalAlignment="Left" Height="160" Margin="110,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="560" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnModifOptArme" Content="Enregistrer" HorizontalAlignment="Left" Margin="296,299,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de suppression d'option d'arme-->
+            <GroupBox x:Name="grpboxSupprOptArme" Header="Suppression d'option d'arme" HorizontalAlignment="Left" Height="150" Margin="43,875,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridSupprOptArme" HorizontalAlignment="Left" Height="110" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixSupprOptArme" Content="Choisissez une option d'arme à supprimer:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixSupprOptArme" HorizontalAlignment="Left" Margin="305,10,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdSupprOptArme" HorizontalAlignment="Left" Height="23" Margin="552,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomSupprOptArme" Content="Nom: " HorizontalAlignment="Left" Margin="20,61,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomSupprOptArme" HorizontalAlignment="Left" Height="23" Margin="75,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnSupprOptArme" Content="Supprimer" HorizontalAlignment="Left" Margin="412,56,0,0" VerticalAlignment="Top" Width="141" FontSize="14" FontWeight="Normal" Height="39"/>
+                </Grid>
+            </GroupBox>
+            <Button x:Name="RetourGestAppli" Content="Retour" HorizontalAlignment="Left" Height="39" Margin="319,1041,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

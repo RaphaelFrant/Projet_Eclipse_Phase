@@ -1,0 +1,77 @@
+﻿<Window x:Class="Projet_Eclipse_Phase.Vue.FormEnrichissementBdd.CrusPassePsi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormEnrichissementBdd"
+        mc:Ignorable="d"
+        Title="CrusPassePsi" Height="1332.479" Width="800">
+    <ScrollViewer>
+        <Grid Width="772">
+            <Label x:Name="labGestPsi" Content="Gestion des Passes Psi" HorizontalAlignment="Left" Margin="242,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <TextBlock x:Name="txtGestPsi" HorizontalAlignment="Left" Margin="43,83,0,0" TextWrapping="Wrap" Text="Dans cette partie, vous pouvez créer, modifier ou supprimer les passes psi disponibles pour les personnages." VerticalAlignment="Top" FontSize="14"/>
+
+            <!--Boite de création de passes psi-->
+            <GroupBox x:Name="grpboxCreaPsi" Header="Création de passes psi" HorizontalAlignment="Left" Height="424" Margin="43,127,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridCreaPsi" HorizontalAlignment="Left" Height="387" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labNomCreaPsi" Content="Nom:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtNomCreaPsi" HorizontalAlignment="Left" Height="23" Margin="61,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labFactPuiCreaPsi" Content="Facteur de puissance:" HorizontalAlignment="Left" Margin="285,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtFactPuiCreaPsi" HorizontalAlignment="Left" Height="23" Margin="440,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labTypeCreaPsi" Content="Type:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtTypeCreaPsi" HorizontalAlignment="Left" Height="23" Margin="61,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labActCreaPsi" Content="Action: " HorizontalAlignment="Left" Margin="243,60,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtActCreaPsi" HorizontalAlignment="Left" Height="23" Margin="304,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labPortCreaPsi" Content="Portée:" HorizontalAlignment="Left" Margin="456,60,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtPortCreaPsi" HorizontalAlignment="Left" Height="23" Margin="518,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDurCreaPsi" Content="Durée:" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDurCreaPsi" HorizontalAlignment="Left" Height="23" Margin="68,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDrainCreaPsi" Content="Modif. de Drain:" HorizontalAlignment="Left" Margin="285,112,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDrainCreaPsi" HorizontalAlignment="Left" Height="23" Margin="407,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDescCreaPsi" Content="Description:" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDescCreaPsi" HorizontalAlignment="Left" Height="146" Margin="104,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="552" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnCreaPsi" Content="Ajouter" HorizontalAlignment="Left" Margin="295,330,0,0" VerticalAlignment="Top" Width="98" FontWeight="Normal" Height="45"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de modification de passes psi -->
+            <GroupBox x:Name="grpboxModifPsi" Header="Modification de passes psi" HorizontalAlignment="Left" Height="477" Margin="43,580,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridModifPsi" HorizontalAlignment="Left" Height="436" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixModifPsi" Content="Choisissez une passe psi à modifier: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cboxChoixModifPsi" HorizontalAlignment="Left" Margin="262,14,0,0" VerticalAlignment="Top" Width="245" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtIdModifPsi" HorizontalAlignment="Left" Height="23" Margin="546,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labNomModifPsi" Content="Nom:" HorizontalAlignment="Left" Margin="19,56,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtNomModifPsi" HorizontalAlignment="Left" Height="23" Margin="70,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labFactPuiModifPsi" Content="Facteur de puissance:" HorizontalAlignment="Left" Margin="294,56,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtFactPuiModifPsi" HorizontalAlignment="Left" Height="23" Margin="449,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labTypeModifPsi" Content="Type:" HorizontalAlignment="Left" Margin="19,106,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtTypeModifPsi" HorizontalAlignment="Left" Height="23" Margin="70,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labActModifPsi" Content="Action: " HorizontalAlignment="Left" Margin="252,106,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtActModifPsi" HorizontalAlignment="Left" Height="23" Margin="313,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labPortModifPsi" Content="Portée:" HorizontalAlignment="Left" Margin="465,106,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtPortModifPsi" HorizontalAlignment="Left" Height="23" Margin="527,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDurModifPsi" Content="Durée:" HorizontalAlignment="Left" Margin="19,158,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDurModifPsi" HorizontalAlignment="Left" Height="23" Margin="77,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDrainModifPsi" Content="Modif. de Drain:" HorizontalAlignment="Left" Margin="294,158,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDrainModifPsi" HorizontalAlignment="Left" Height="23" Margin="416,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labDescModifPsi" Content="Description:" HorizontalAlignment="Left" Margin="19,205,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDescModifPsi" HorizontalAlignment="Left" Height="146" Margin="113,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="552" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnModifPsi" Content="Enregistrer" HorizontalAlignment="Left" Margin="304,376,0,0" VerticalAlignment="Top" Width="98" FontWeight="Normal" Height="45"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de suppression de passes psi-->
+            <GroupBox x:Name="grpboxSupprPsi" Header="Suppression de passes psi" HorizontalAlignment="Left" Height="138" Margin="43,1083,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridSupprPsi" HorizontalAlignment="Left" Height="103" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixSupprPsi" Content="Choisissez une passe psi à supprimer: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cboxChoixSupprPsi" HorizontalAlignment="Left" Margin="268,14,0,0" VerticalAlignment="Top" Width="245" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtIdSupprPsi" HorizontalAlignment="Left" Height="23" Margin="546,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="labNomSupprPsi" Content="Nom:" HorizontalAlignment="Left" Margin="19,56,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtNomSupprPsi" HorizontalAlignment="Left" Height="23" Margin="70,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnSupprPsi" Content="Supprimer" HorizontalAlignment="Left" Margin="479,53,0,0" VerticalAlignment="Top" Width="124" FontSize="14" FontWeight="Normal" Height="36"/>
+                </Grid>
+            </GroupBox>
+            <Button x:Name="RetourGestAppli" Content="Retour" HorizontalAlignment="Left" Height="39" Margin="318,1244,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

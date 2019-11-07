@@ -1,0 +1,50 @@
+﻿<Window x:Class="Projet_Eclipse_Phase.Vue.FormEnrichissementBdd.CrudTypeArme"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormEnrichissementBdd"
+        mc:Ignorable="d"
+        Title="CrudTypeArme" Height="678.688" Width="800">
+    <ScrollViewer>
+        <Grid Width="772">
+            <Label x:Name="labGestTypeArme" Content="Gestion des Types d'arme" HorizontalAlignment="Left" Margin="283,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+            <TextBlock x:Name="txtGestTypeArme" HorizontalAlignment="Left" Margin="43,83,0,0" TextWrapping="Wrap" Text="Dans cette partie, vous pouvez créer, modifier ou supprimer les équipements disponibles pour les personnages." VerticalAlignment="Top" FontSize="14"/>
+
+            <!--Boite de création de types d'arme-->
+            <GroupBox x:Name="grpboxCreaTypeArme" Header="Création de types d'arme" HorizontalAlignment="Left" Height="98" Margin="43,127,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridCreaTypeArme" HorizontalAlignment="Left" Height="59" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labNomCreaTypeArme" Content="Nom: " HorizontalAlignment="Left" Margin="13,13,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomCreaTypeArme" HorizontalAlignment="Left" Height="23" Margin="78,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnAjoutCreaTypeArme" Content="Ajouter" HorizontalAlignment="Left" Margin="526,13,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+            <!--Boite de modification de types d'arme-->
+            <GroupBox x:Name="grpboxModifTypeArme" Header="Modification de types d'arme" HorizontalAlignment="Left" Height="138" Margin="43,254,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridModifTypeArme" HorizontalAlignment="Left" Height="106" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixModifTypeArme" Content="Choisissez un type d'arme à modifier:" HorizontalAlignment="Left" Margin="12,12,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixModifTypeArme" HorizontalAlignment="Left" Margin="274,12,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdModifTypeArme" HorizontalAlignment="Left" Height="23" Margin="532,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomModifTypeArme" Content="Nom: " HorizontalAlignment="Left" Margin="16,58,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomModifTypeArme" HorizontalAlignment="Left" Height="23" Margin="81,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="323" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnModifTypeArme" Content="Enregistrer" HorizontalAlignment="Left" Margin="532,56,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontWeight="Normal" Height="33"/>
+                </Grid>
+            </GroupBox>
+
+
+            <!--Boite de suppression de types d'arme-->
+            <GroupBox x:Name="grpboxSupprTypeArme" Header="Suppression de types d'arme" HorizontalAlignment="Left" Height="150" Margin="43,422,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridSupprTypeArme" HorizontalAlignment="Left" Height="110" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
+                    <Label x:Name="labChoixSupprTypeArme" Content="Choisissez un type d'arme à supprimer:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmbboxChoixSupprTypeArme" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
+                    <TextBox x:Name="txtIdSupprTypeArme" HorizontalAlignment="Left" Height="23" Margin="539,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="White"/>
+                    <Label x:Name="labNomSupprTypeArme" Content="Nom: " HorizontalAlignment="Left" Margin="20,61,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBox x:Name="txtNomSupprTypeArme" HorizontalAlignment="Left" Height="23" Margin="75,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="298" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnSupprTypeArme" Content="Supprimer" HorizontalAlignment="Left" Margin="412,56,0,0" VerticalAlignment="Top" Width="141" FontSize="14" FontWeight="Normal" Height="39"/>
+                </Grid>
+            </GroupBox>
+            <Button x:Name="RetourGestAppli" Content="Retour" HorizontalAlignment="Left" Height="39" Margin="310,592,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

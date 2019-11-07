@@ -17,7 +17,7 @@
                     <Label x:Name="labNomCreaArme" Content="Nom: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
                     <TextBox x:Name="txtNomCreaArme" HorizontalAlignment="Left" Height="23" Margin="65,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="257" FontSize="14" FontWeight="Normal"/>
                     <Label x:Name="labTypeCreaArme" Content="Type d'arme:" HorizontalAlignment="Left" Margin="340,10,0,0" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBox x:Name="txtTypeCreaArme" HorizontalAlignment="Left" Height="23" Margin="440,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <ComboBox x:Name="cboxTypeCreaArme" HorizontalAlignment="Left" Margin="440,14,0,0" VerticalAlignment="Top" Width="120" FontWeight="Normal" FontSize="14"/>
                     <Label x:Name="labPaCreaArme" Content="PA:" HorizontalAlignment="Left" Margin="580,10,0,0" VerticalAlignment="Top" FontSize="14"/>
                     <TextBox x:Name="txtPaCreaArme" HorizontalAlignment="Left" Height="29" Margin="616,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64" FontSize="14" FontWeight="Normal"/>
                     <Label x:Name="labVdCreaArme" Content="VD :" HorizontalAlignment="Left" Margin="15,65,0,0" VerticalAlignment="Top" FontSize="14"/>
@@ -41,7 +41,7 @@
                     <Label x:Name="labNomModifArme" Content="Nom: " HorizontalAlignment="Left" Margin="4,54,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
                     <TextBox x:Name="txtNomModifArme" HorizontalAlignment="Left" Height="23" Margin="59,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="257" FontSize="14" FontWeight="Normal"/>
                     <Label x:Name="labTypeModifArme" Content="Type d'arme:" HorizontalAlignment="Left" Margin="334,54,0,0" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBox x:Name="txtTypeModifArme" HorizontalAlignment="Left" Height="23" Margin="434,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <ComboBox x:Name="cboxTypeModifArme" HorizontalAlignment="Left" Margin="434,58,0,0" VerticalAlignment="Top" Width="120" FontWeight="Normal" FontSize="14"/>
                     <Label x:Name="labPaModifArme" Content="PA:" HorizontalAlignment="Left" Margin="574,54,0,0" VerticalAlignment="Top" FontSize="14"/>
                     <TextBox x:Name="txtPaModifArme" HorizontalAlignment="Left" Height="29" Margin="610,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64" FontSize="14" FontWeight="Normal"/>
                     <Label x:Name="labVdModifArme" Content="VD :" HorizontalAlignment="Left" Margin="9,109,0,0" VerticalAlignment="Top" FontSize="14"/>
