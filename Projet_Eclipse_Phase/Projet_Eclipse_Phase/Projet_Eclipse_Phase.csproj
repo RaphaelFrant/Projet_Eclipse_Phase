@@ -112,6 +112,9 @@
     <Compile Include="Vue\FormPersonnage\FormCreaPerso.xaml.cs">
       <DependentUpon>FormCreaPerso.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vue\FormPersonnage\FormCreaPersoEquip.xaml.cs">
+      <DependentUpon>FormCreaPersoEquip.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vue\GestionClient.xaml.cs">
       <DependentUpon>GestionClient.xaml</DependentUpon>
     </Compile>
@@ -203,6 +206,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Vue\FormPersonnage\FormCreaPerso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vue\FormPersonnage\FormCreaPersoEquip.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

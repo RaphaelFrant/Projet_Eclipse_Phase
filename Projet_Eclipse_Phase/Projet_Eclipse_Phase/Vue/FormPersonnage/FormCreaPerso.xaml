@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormPersonnage"
         mc:Ignorable="d"
-        Title="FormCreaPerso" Height="4397.643" Width="800">
+        Title="FormCreaPerso" Height="2075.643" Width="800">
     <ScrollViewer>
         <Grid Width="772">
             <Label x:Name="labCreaPerso" Content="Création des personnages" HorizontalAlignment="Left" Margin="257,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
@@ -65,37 +65,285 @@
             <!--Personnalisation du peprsonnage-->
             <Label x:Name="labPtPerso" Content="Nombre de point de personnalisation à répartir:" HorizontalAlignment="Left" Margin="23,907,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
             <TextBlock x:Name="txtPtPerso" HorizontalAlignment="Left" Margin="399,912,0,0" TextWrapping="Wrap" Text="300" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="108"/>
-            
+            <Label x:Name="labArgentCrea" Content="Argent" HorizontalAlignment="Left" Margin="485,909,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+            <TextBox x:Name="txtArgentCrea" HorizontalAlignment="Left" Height="23" Margin="546,913,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" FontSize="14"/>
+
             <!--Personnalisation du personnage - Compétences Actives-->
-            <GroupBox x:Name="gboxCompAct" Header="Compétences" HorizontalAlignment="Left" Height="551" Margin="10,955,0,0" VerticalAlignment="Top" Width="752" FontSize="16" FontWeight="Bold">
-                <Grid x:Name="grilleCompAct" HorizontalAlignment="Left" Height="510" Margin="0,10,-2,0" VerticalAlignment="Top" Width="742">
+            <GroupBox x:Name="gboxCompAct" Header="Compétences Actives" HorizontalAlignment="Left" Height="1077" Margin="10,955,0,0" VerticalAlignment="Top" Width="752" FontSize="16" FontWeight="Bold">
+                <Grid x:Name="grilleCompAct" HorizontalAlignment="Left" Height="1034" Margin="0,10,-2,0" VerticalAlignment="Top" Width="742">
                     <Label x:Name="labPtCompAct" Content="Nombre de point de personnalisation à répartir dans des compétences actives:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
                     <TextBlock x:Name="txtPtCompAct" HorizontalAlignment="Left" Margin="540,15,0,0" TextWrapping="Wrap" Text="400" VerticalAlignment="Top" FontSize="14"/>
-
+                    <Label x:Name="labArmeDisp" Content="Armes à dispersions" HorizontalAlignment="Left" Margin="9,84,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeDisp" HorizontalAlignment="Left" Height="23" Margin="155,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeDisp" HorizontalAlignment="Left" Margin="228,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="167,64,0,0" TextWrapping="Wrap" Text="Base" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="239,64,0,0" TextWrapping="Wrap" Text="Total" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="549,64,0,0" TextWrapping="Wrap" Text="Base" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="621,64,0,0" TextWrapping="Wrap" Text="Total" VerticalAlignment="Top" FontSize="14"/>
+                    <Label x:Name="labArmeDistExot" Content="Armes à distance exot." HorizontalAlignment="Left" Margin="0,116,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeDistExot" HorizontalAlignment="Left" Height="23" Margin="155,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeDistExot" HorizontalAlignment="Left" Margin="228,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labArmeGuid" Content="Armes à guidage" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeGuid" HorizontalAlignment="Left" Height="23" Margin="155,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeGuid" HorizontalAlignment="Left" Margin="228,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labArmeRayon" Content="Armes à rayon" HorizontalAlignment="Left" Margin="22,184,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeRayon" HorizontalAlignment="Left" Height="23" Margin="155,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeRayon" HorizontalAlignment="Left" Margin="228,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labArmeCine" Content="Armes cinétique" HorizontalAlignment="Left" Margin="14,218,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeCine" HorizontalAlignment="Left" Height="23" Margin="155,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeCine" HorizontalAlignment="Left" Margin="228,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labArmeJet" Content="Armes de jet" HorizontalAlignment="Left" Margin="14,250,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeJet" HorizontalAlignment="Left" Height="23" Margin="155,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeJet" HorizontalAlignment="Left" Margin="228,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labArmeCont" Content="Armes contondante" HorizontalAlignment="Left" Margin="0,284,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeCont" HorizontalAlignment="Left" Height="23" Margin="155,286,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeCont" HorizontalAlignment="Left" Margin="228,287,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labArmeMeleExo" Content="Armes mêlée exot." HorizontalAlignment="Left" Margin="0,317,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeMeleExo" HorizontalAlignment="Left" Height="23" Margin="155,319,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeMeleExo" HorizontalAlignment="Left" Margin="228,320,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labArmeTranch" Content="Armes tranchante" HorizontalAlignment="Left" Margin="0,349,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeTranch" HorizontalAlignment="Left" Height="23" Margin="155,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeTranch" HorizontalAlignment="Left" Margin="228,352,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labCombatNa" Content="Combat non armé" HorizontalAlignment="Left" Margin="0,383,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtCombatNa" HorizontalAlignment="Left" Height="23" Margin="155,385,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoCombatNa" HorizontalAlignment="Left" Margin="228,386,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labArmeMont" Content="Armes montées" HorizontalAlignment="Left" Margin="10,417,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtArmeMont" HorizontalAlignment="Left" Height="23" Margin="155,419,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArmeMont" HorizontalAlignment="Left" Margin="228,420,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labEsq" Content="Esquive" HorizontalAlignment="Left" Margin="32,451,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtEsq" HorizontalAlignment="Left" Height="23" Margin="155,453,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoEsq" HorizontalAlignment="Left" Margin="228,454,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labChuteLib" Content="Chute Libre" HorizontalAlignment="Left" Margin="32,485,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtChuteLib" HorizontalAlignment="Left" Height="23" Margin="155,490,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoChuteLib" HorizontalAlignment="Left" Margin="228,491,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labDeguise" Content="Déguisement" HorizontalAlignment="Left" Margin="25,519,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDeguise" HorizontalAlignment="Left" Height="23" Margin="155,523,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoDeguise" HorizontalAlignment="Left" Margin="228,524,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labEscam" Content="Escamotage" HorizontalAlignment="Left" Margin="25,551,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtEscam" HorizontalAlignment="Left" Height="23" Margin="155,555,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoEscam" HorizontalAlignment="Left" Margin="228,556,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labInfiltr" Content="Infiltration" HorizontalAlignment="Left" Margin="25,583,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtInfiltr" HorizontalAlignment="Left" Height="23" Margin="155,587,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoInfiltr" HorizontalAlignment="Left" Margin="228,588,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labEscal" Content="Escalade" HorizontalAlignment="Left" Margin="25,617,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtEscal" HorizontalAlignment="Left" Height="23" Margin="155,621,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoEscal" HorizontalAlignment="Left" Margin="228,622,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labNatat" Content="Natation" HorizontalAlignment="Left" Margin="25,649,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtNatat" HorizontalAlignment="Left" Height="23" Margin="155,653,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoNatat" HorizontalAlignment="Left" Margin="228,654,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labParkour" Content="Parkour" HorizontalAlignment="Left" Margin="25,683,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtParkour" HorizontalAlignment="Left" Height="23" Margin="155,687,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoParkour" HorizontalAlignment="Left" Margin="228,688,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labVoler" Content="Vol" HorizontalAlignment="Left" Margin="43,717,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtVoler" HorizontalAlignment="Left" Height="23" Margin="155,721,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoVoler" HorizontalAlignment="Left" Margin="228,722,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labDemol" Content="Démolition*" HorizontalAlignment="Left" Margin="22,751,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtDemol" HorizontalAlignment="Left" Height="23" Margin="155,754,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoDemol" HorizontalAlignment="Left" Margin="228,755,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labInfosec" Content="Infosec*" HorizontalAlignment="Left" Margin="32,785,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtInfosec" HorizontalAlignment="Left" Height="23" Margin="155,788,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoInfosec" HorizontalAlignment="Left" Margin="228,789,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labInterface" Content="Interface" HorizontalAlignment="Left" Margin="32,818,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtInterface" HorizontalAlignment="Left" Height="23" Margin="155,821,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoInterface" HorizontalAlignment="Left" Margin="228,822,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labMaterielPrime" HorizontalAlignment="Left" Margin="14,855,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtMaterielPrime" HorizontalAlignment="Left" Height="23" Margin="155,855,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoMaterielPrime" HorizontalAlignment="Left" Margin="228,856,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labMaterielSecond" HorizontalAlignment="Left" Margin="14,891,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtMaterielSecond" HorizontalAlignment="Left" Height="23" Margin="155,891,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoMaterielSecond" HorizontalAlignment="Left" Margin="228,892,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labMaterielTier" HorizontalAlignment="Left" Margin="14,927,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtMaterielTier" HorizontalAlignment="Left" Height="23" Margin="155,927,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoMaterielTier" HorizontalAlignment="Left" Margin="228,928,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labMaterielQuart" HorizontalAlignment="Left" Margin="14,961,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtMaterielQuart" HorizontalAlignment="Left" Height="23" Margin="155,961,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoMaterielQuart" HorizontalAlignment="Left" Margin="228,962,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labMedecinPrimo" HorizontalAlignment="Left" Margin="14,997,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtMedecinPrimo" HorizontalAlignment="Left" Height="23" Margin="155,997,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoMedecinPrimo" HorizontalAlignment="Left" Margin="228,998,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labMedecinSecond" HorizontalAlignment="Left" Margin="395,87,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtMedecinSecond" HorizontalAlignment="Left" Height="23" Margin="536,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoMedecinSecond" HorizontalAlignment="Left" Margin="609,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labProg" Content="Programmation*" HorizontalAlignment="Left" Margin="395,117,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtProg" HorizontalAlignment="Left" Height="23" Margin="536,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoProg" HorizontalAlignment="Left" Margin="609,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labRecherche" Content="Recherche" HorizontalAlignment="Left" Margin="415,150,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtRecherche" HorizontalAlignment="Left" Height="23" Margin="536,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoRecherche" HorizontalAlignment="Left" Margin="609,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labPsychochir" Content="Psychochirurgie" HorizontalAlignment="Left" Margin="395,184,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtPsychochir" HorizontalAlignment="Left" Height="23" Margin="536,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoPsychochir" HorizontalAlignment="Left" Margin="609,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labFouille" Content="Fouille" HorizontalAlignment="Left" Margin="426,215,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtFouille" HorizontalAlignment="Left" Height="23" Margin="536,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoFouille" HorizontalAlignment="Left" Margin="609,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labInvest" Content="Investigation" HorizontalAlignment="Left" Margin="405,247,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtInvest" HorizontalAlignment="Left" Height="23" Margin="536,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoInvest" HorizontalAlignment="Left" Margin="609,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labNavig" Content="Navigation" HorizontalAlignment="Left" Margin="415,281,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtNavig" HorizontalAlignment="Left" Height="23" Margin="536,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoNavig" HorizontalAlignment="Left" Margin="609,284,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labPercep" Content="Perception" HorizontalAlignment="Left" Margin="415,314,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtPercep" HorizontalAlignment="Left" Height="23" Margin="536,316,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoPercep" HorizontalAlignment="Left" Margin="609,317,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labAssautPsi" Content="Assaut Psi" HorizontalAlignment="Left" Margin="415,348,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtAssautPsi" HorizontalAlignment="Left" Height="23" Margin="536,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoAssautPsi" HorizontalAlignment="Left" Margin="609,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labControle" Content="Contrôle" HorizontalAlignment="Left" Margin="415,380,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtControle" HorizontalAlignment="Left" Height="23" Margin="536,382,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoControle" HorizontalAlignment="Left" Margin="609,383,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labSensation" Content="Sensation" HorizontalAlignment="Left" Margin="415,414,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtSensation" HorizontalAlignment="Left" Height="23" Margin="536,416,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoSensation" HorizontalAlignment="Left" Margin="609,417,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labControlAnim" Content="Contrôle animal" HorizontalAlignment="Left" Margin="405,448,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtControlAnim" HorizontalAlignment="Left" Height="23" Margin="536,450,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoControlAnim" HorizontalAlignment="Left" Margin="609,451,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labImpost" Content="Imposture" HorizontalAlignment="Left" Margin="415,482,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtImpost" HorizontalAlignment="Left" Height="23" Margin="536,484,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoImpost" HorizontalAlignment="Left" Margin="609,485,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labIntimide" Content="Intimidation" HorizontalAlignment="Left" Margin="415,516,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtIntimide" HorizontalAlignment="Left" Height="23" Margin="536,518,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoIntimide" HorizontalAlignment="Left" Margin="609,519,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labKinesique" Content="Kinésique" HorizontalAlignment="Left" Margin="415,548,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtKinesique" HorizontalAlignment="Left" Height="23" Margin="536,550,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoKinesique" HorizontalAlignment="Left" Margin="609,551,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labPersuasion" Content="Persuasion" HorizontalAlignment="Left" Margin="415,580,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtPersuasion" HorizontalAlignment="Left" Height="23" Margin="536,582,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoPersuasion" HorizontalAlignment="Left" Margin="609,583,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labProtocole" Content="Protocole" HorizontalAlignment="Left" Margin="415,614,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtProtocole" HorizontalAlignment="Left" Height="23" Margin="536,616,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoProtocole" HorizontalAlignment="Left" Margin="609,617,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labReseauPrime" HorizontalAlignment="Left" Margin="395,654,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtReseauPrime" HorizontalAlignment="Left" Height="23" Margin="536,654,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoReseauPrime" HorizontalAlignment="Left" Margin="609,655,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labReseauSecond" HorizontalAlignment="Left" Margin="395,690,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtReseauSecond" HorizontalAlignment="Left" Height="23" Margin="536,690,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoReseauSecond" HorizontalAlignment="Left" Margin="609,691,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labReseauTier" HorizontalAlignment="Left" Margin="395,726,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtReseauTier" HorizontalAlignment="Left" Height="23" Margin="536,726,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoReseauTier" HorizontalAlignment="Left" Margin="609,727,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labReseauQuart" HorizontalAlignment="Left" Margin="395,760,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtReseauQuart" HorizontalAlignment="Left" Height="23" Margin="536,760,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoReseauQuart" HorizontalAlignment="Left" Margin="609,761,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <Label x:Name="labSubterfuge" Content="Subterfuge" HorizontalAlignment="Left" Margin="415,802,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="txtSubterfuge" HorizontalAlignment="Left" Height="23" Margin="536,804,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoSubterfuge" HorizontalAlignment="Left" Margin="609,805,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labPilotePrime" HorizontalAlignment="Left" Margin="395,837,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtPilotePrime" HorizontalAlignment="Left" Height="23" Margin="536,837,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoPilotePrime" HorizontalAlignment="Left" Margin="609,838,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labPiloteSecond" HorizontalAlignment="Left" Margin="395,873,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtPiloteSecond" HorizontalAlignment="Left" Height="23" Margin="536,873,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoPiloteSecond" HorizontalAlignment="Left" Margin="609,874,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labPiloteTier" HorizontalAlignment="Left" Margin="395,909,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtPiloteTier" HorizontalAlignment="Left" Height="23" Margin="536,909,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoPiloteTier" HorizontalAlignment="Left" Margin="609,910,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labPiloteQuart" HorizontalAlignment="Left" Margin="395,943,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtPiloteQuart" HorizontalAlignment="Left" Height="23" Margin="536,943,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoPiloteQuart" HorizontalAlignment="Left" Margin="609,944,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
                 </Grid>
             </GroupBox>
 
             <!--Personnalisation du personnage - Compétences de Connaissances-->
+            <GroupBox x:Name="gboxCompConn" Header="Compétence de Connaissance" HorizontalAlignment="Left" Height="454" Margin="10,2049,0,0" VerticalAlignment="Top" Width="752" FontSize="16" FontWeight="Bold">
+                <Grid x:Name="grilleCompConn" HorizontalAlignment="Left" Height="413" Margin="0,10,-12,0" VerticalAlignment="Top" Width="752">
+                    <Label x:Name="labPtCompConn" Content="Nombre de point de personnalisation à répartir dans des compétences de connaissances:" HorizontalAlignment="Left" Margin="13,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtPtCompConn" HorizontalAlignment="Left" Margin="611,15,0,0" TextWrapping="Wrap" Text="300" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="labArtPrime" HorizontalAlignment="Left" Margin="13,56,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtArtPrime" HorizontalAlignment="Left" Height="23" Margin="154,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArtPrime" HorizontalAlignment="Left" Margin="227,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labArtSecond" HorizontalAlignment="Left" Margin="13,92,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtArtSecond" HorizontalAlignment="Left" Height="23" Margin="154,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArtSecond" HorizontalAlignment="Left" Margin="227,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labArtTier" HorizontalAlignment="Left" Margin="13,128,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtArtTier" HorizontalAlignment="Left" Height="23" Margin="154,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArtTier" HorizontalAlignment="Left" Margin="227,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labArtQuart" HorizontalAlignment="Left" Margin="13,162,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtArtQuart" HorizontalAlignment="Left" Height="23" Margin="154,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoArtQuart" HorizontalAlignment="Left" Margin="227,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labInteretPrime" HorizontalAlignment="Left" Margin="13,199,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtInteretPrime" HorizontalAlignment="Left" Height="23" Margin="154,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoInteretPrime" HorizontalAlignment="Left" Margin="227,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labInteretSecond" HorizontalAlignment="Left" Margin="13,235,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtInteretSecond" HorizontalAlignment="Left" Height="23" Margin="154,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoInteretSecond" HorizontalAlignment="Left" Margin="227,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labInteretTier" HorizontalAlignment="Left" Margin="13,271,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtInteretTier" HorizontalAlignment="Left" Height="23" Margin="154,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoInteretTier" HorizontalAlignment="Left" Margin="227,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labInteretQuart" HorizontalAlignment="Left" Margin="13,305,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtInteretQuart" HorizontalAlignment="Left" Height="23" Margin="154,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoInteretQuart" HorizontalAlignment="Left" Margin="227,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labLangPrime" HorizontalAlignment="Left" Margin="13,341,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtLangPrime" HorizontalAlignment="Left" Height="23" Margin="154,341,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoLangPrime" HorizontalAlignment="Left" Margin="227,342,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labLangSecond" HorizontalAlignment="Left" Margin="13,377,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtLangSecond" HorizontalAlignment="Left" Height="23" Margin="154,377,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoLangSecond" HorizontalAlignment="Left" Margin="227,378,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labLangTier" HorizontalAlignment="Left" Margin="395,57,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtLangTier" HorizontalAlignment="Left" Height="23" Margin="536,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoLangTier" HorizontalAlignment="Left" Margin="609,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labLangQuart" HorizontalAlignment="Left" Margin="395,91,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtLangQuart" HorizontalAlignment="Left" Height="23" Margin="536,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoLangQuart" HorizontalAlignment="Left" Margin="609,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labProPrime" HorizontalAlignment="Left" Margin="395,127,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtProPrime" HorizontalAlignment="Left" Height="23" Margin="536,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoProPrime" HorizontalAlignment="Left" Margin="609,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labProSecond" HorizontalAlignment="Left" Margin="395,163,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtProSecond" HorizontalAlignment="Left" Height="23" Margin="536,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoProSecond" HorizontalAlignment="Left" Margin="609,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labProTier" HorizontalAlignment="Left" Margin="395,199,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtProTier" HorizontalAlignment="Left" Height="23" Margin="536,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoProTier" HorizontalAlignment="Left" Margin="609,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labProQuart" HorizontalAlignment="Left" Margin="395,233,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtProQuart" HorizontalAlignment="Left" Height="23" Margin="536,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoProQuart" HorizontalAlignment="Left" Margin="609,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labTheoriePrime" HorizontalAlignment="Left" Margin="395,270,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtTheoriePrime" HorizontalAlignment="Left" Height="23" Margin="536,270,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoTheoriePrime" HorizontalAlignment="Left" Margin="609,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labTheorieSecond" HorizontalAlignment="Left" Margin="395,306,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtTheorieSecond" HorizontalAlignment="Left" Height="23" Margin="536,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoTheorieSecond" HorizontalAlignment="Left" Margin="609,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labTheorieTier" HorizontalAlignment="Left" Margin="395,342,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtTheorieTier" HorizontalAlignment="Left" Height="23" Margin="536,342,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoTheorieTier" HorizontalAlignment="Left" Margin="609,343,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                    <ComboBox x:Name="labTheorieQuart" HorizontalAlignment="Left" Margin="395,376,0,0" VerticalAlignment="Top" Width="120" FontSize="14" FontWeight="Normal"/>
+                    <TextBox x:Name="txtTheorieQuart" HorizontalAlignment="Left" Height="23" Margin="536,376,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="56" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtTotoTheorieQuart" HorizontalAlignment="Left" Margin="609,377,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="56"/>
+                </Grid>
+            </GroupBox>
 
             <!--Personnalisation du personnage - Aspects-->
+            <GroupBox x:Name="gboxAspect" Header="Aspect de personnage" HorizontalAlignment="Left" Height="480" Margin="10,2519,0,0" VerticalAlignment="Top" Width="752" FontSize="16" FontWeight="Bold">
+                <Grid x:Name="grilleAspect" HorizontalAlignment="Left" Height="441" Margin="0,10,-2,0" VerticalAlignment="Top" Width="742">
+                    <Label x:Name="labNomAsp" Content="Nom Aspect: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cboxNomAsp" HorizontalAlignment="Left" Margin="113,14,0,0" VerticalAlignment="Top" Width="246" FontWeight="Normal" FontSize="14"/>
+                    <Label x:Name="labDescAsp" Content="Description:" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtDescAsp" HorizontalAlignment="Left" Margin="113,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Height="101" Width="612"/>
+                    <Button x:Name="btnAjoutAspect" Content="Ajouter" HorizontalAlignment="Left" Margin="506,10,0,0" VerticalAlignment="Top" Width="114" FontSize="14" FontWeight="Normal" Height="29"/>
+                    <DataGrid x:Name="dtgridAspPerso" HorizontalAlignment="Left" Height="267" Margin="8,164,0,0" VerticalAlignment="Top" Width="717" FontSize="14" FontWeight="Normal"/>
+                </Grid>
+            </GroupBox>
 
             <!--Personnalisation du personnage - Réputation-->
+            <GroupBox x:Name="gboxReput" Header="Réputations" HorizontalAlignment="Left" Height="188" Margin="10,3023,0,0" VerticalAlignment="Top" Width="752" FontSize="16" FontWeight="Bold">
+                <Grid x:Name="grilleReput" HorizontalAlignment="Left" Height="147" Margin="0,10,-2,0" VerticalAlignment="Top" Width="742">
+                    <Label x:Name="labAutonomReput" Content="@-rép" HorizontalAlignment="Left" Margin="21,15,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBox x:Name="txtAutonomReput" HorizontalAlignment="Left" Height="24" Margin="96,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontSize="16" FontWeight="Normal"/>
+                    <Label x:Name="labCrimeReput" Content="G-rép" HorizontalAlignment="Left" Margin="264,15,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBox x:Name="txtCrimeReput" HorizontalAlignment="Left" Height="24" Margin="339,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontSize="16" FontWeight="Normal"/>
+                    <Label x:Name="labHcorpReput" Content="C-rép" HorizontalAlignment="Left" Margin="504,15,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBox x:Name="txtHcorpReput" HorizontalAlignment="Left" Height="24" Margin="579,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontSize="16" FontWeight="Normal"/>
+                    <Label x:Name="labFirewallReput" Content="I-rép" HorizontalAlignment="Left" Margin="21,61,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBox x:Name="txtFirewallReput" HorizontalAlignment="Left" Height="24" Margin="96,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontSize="16" FontWeight="Normal"/>
+                    <Label x:Name="labEcoloReput" Content="E-rép" HorizontalAlignment="Left" Margin="264,61,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBox x:Name="txtEcoloReput" HorizontalAlignment="Left" Height="24" Margin="339,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontSize="16" FontWeight="Normal"/>
+                    <Label x:Name="labChercheurReput" Content="R-rép" HorizontalAlignment="Left" Margin="504,61,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBox x:Name="txtChercheurReput" HorizontalAlignment="Left" Height="24" Margin="579,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontSize="16" FontWeight="Normal"/>
+                    <Label x:Name="labMondainReput" Content="F-rép" HorizontalAlignment="Left" Margin="21,106,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <TextBox x:Name="txtMondainReput" HorizontalAlignment="Left" Height="24" Margin="96,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontSize="16" FontWeight="Normal"/>
+                </Grid>
+            </GroupBox>
 
-            <!--Personnalisation du personnage - Argent-->
-
-            <!--Personnalisation du personnage - Implants-->
-
-            <!--Personnalisation du personnage - Équipements-->
-
-            <!--Personnalisation du personnage - Armes-->
-
-            <!--Personnalisation du personnage - Armures-->
-
-            <!--Personnalisation du personnage - Véhicules-->
-
-            <!--Personnalisation du personnage - Robots-->
-
-
+            <Button x:Name="btnSuivantCreaPerso" Content="Suivant" HorizontalAlignment="Left" Margin="223,3242,0,0" VerticalAlignment="Top" Width="121" FontSize="16" Height="43"/>
+            <Button x:Name="btnRetour" Content="Retour" HorizontalAlignment="Left" Margin="435,3242,0,0" VerticalAlignment="Top" Width="122" FontSize="16" Height="43"/>
         </Grid>
     </ScrollViewer>
 </Window>
