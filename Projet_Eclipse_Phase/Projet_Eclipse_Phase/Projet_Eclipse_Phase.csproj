@@ -109,6 +109,9 @@
     <Compile Include="Vue\FormEnrichissementBdd\CrusPassePsi.xaml.cs">
       <DependentUpon>CrusPassePsi.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vue\FormPersonnage\FormCreaPerso.xaml.cs">
+      <DependentUpon>FormCreaPerso.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vue\GestionClient.xaml.cs">
       <DependentUpon>GestionClient.xaml</DependentUpon>
     </Compile>
@@ -199,6 +202,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Vue\FormPersonnage\FormCreaPerso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Vue\GestionClient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -237,7 +244,6 @@
   <ItemGroup>
     <Folder Include="Controlleur\" />
     <Folder Include="Modèle\" />
-    <Folder Include="Vue\FormPersonnage\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
