@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormPersonnage"
         mc:Ignorable="d"
-        Title="FormCreaPersoEquip" Height="3988.217" Width="800">
+        Title="FormCreaPersoEquip" Height="3631.217" Width="800">
     <ScrollViewer>
         <Grid>
             <Label x:Name="labChoixEquip" Content="Choix de l'équipement du personnage" HorizontalAlignment="Left" Margin="166,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
@@ -47,62 +47,82 @@
             </GroupBox>
 
             <!--Personnalisation du personnage - Armes-->
-            <GroupBox x:Name="gboxChoixArme" Header="Choix d'arme" HorizontalAlignment="Left" Height="593" Margin="10,1446,0,0" VerticalAlignment="Top" Width="755" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
-                <Grid x:Name="grilleChoixArme" HorizontalAlignment="Left" Height="551" Margin="0,10,-2,0" VerticalAlignment="Top" Width="745">
+            <GroupBox x:Name="gboxChoixArme" Header="Choix d'arme" HorizontalAlignment="Left" Height="490" Margin="10,1446,0,0" VerticalAlignment="Top" Width="755" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grilleChoixArme" HorizontalAlignment="Left" Height="454" Margin="0,10,-2,0" VerticalAlignment="Top" Width="745">
                     <Label x:Name="labNomArme" Content="Nom de l'arme:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
                     <ComboBox x:Name="cboxNomArme" HorizontalAlignment="Left" Margin="127,14,0,0" VerticalAlignment="Top" Width="228" FontSize="14" FontWeight="Normal"/>
-                    <Label x:Name="labDescArme" Content="Description:" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBlock x:Name="txtDescArme" HorizontalAlignment="Left" Margin="113,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Height="106" Width="600"/>
-                    <Label x:Name="labCoutArme" Content="Coût:" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBlock x:Name="txtCoutArme" HorizontalAlignment="Left" Margin="60,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="107"/>
-                    <Button x:Name="btnAjoutArme" Content="Ajouter" HorizontalAlignment="Left" Margin="424,187,0,0" VerticalAlignment="Top" Width="75" FontWeight="Normal" FontSize="14"/>
-                    <DataGrid x:Name="dtgridArme" HorizontalAlignment="Left" Height="311" Margin="10,228,0,0" VerticalAlignment="Top" Width="725"/>
+                    <Label x:Name="labTypeArme" Content="Type d'arme:" HorizontalAlignment="Left" Margin="394,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtTypeArme" HorizontalAlignment="Left" Margin="494,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Height="24" Width="190"/>
+                    <Label x:Name="labVdArme" Content="VD" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtVdArme" HorizontalAlignment="Left" Margin="48,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="102"/>
+                    <Label x:Name="labPaArme" Content="PA" HorizontalAlignment="Left" Margin="188,55,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtPaArme" HorizontalAlignment="Left" Margin="221,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="44"/>
+                    <Label x:Name="labModArme" Content="Mode Arme:" HorizontalAlignment="Left" Margin="320,55,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtModArme" HorizontalAlignment="Left" Margin="417,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="91" FontWeight="Normal" FontSize="14"/>
+                    <Label x:Name="labChargeArme" Content="Chargeur" HorizontalAlignment="Left" Margin="543,55,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtChargeArme" HorizontalAlignment="Left" Margin="618,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="66"/>
+                    <Label x:Name="labCoutArme" Content="Coût:" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtCoutArme" HorizontalAlignment="Left" Margin="60,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="107"/>
+                    <Label x:Name="labOptionArme" Content="Option:" HorizontalAlignment="Left" Margin="221,92,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="cmboxOptionArme" HorizontalAlignment="Left" Margin="286,95,0,0" VerticalAlignment="Top" Width="239" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnAjoutArme" Content="Ajouter" HorizontalAlignment="Left" Margin="609,95,0,0" VerticalAlignment="Top" Width="75" FontWeight="Normal" FontSize="14"/>
+                    <DataGrid x:Name="dtgridArme" HorizontalAlignment="Left" Height="311" Margin="10,136,0,0" VerticalAlignment="Top" Width="725"/>
                 </Grid>
             </GroupBox>
 
             <!--Personnalisation du personnage - Armures-->
-            <GroupBox x:Name="gboxChoixArmure" Header="Choix d'armure" HorizontalAlignment="Left" Height="593" Margin="10,2059,0,0" VerticalAlignment="Top" Width="755" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
-                <Grid x:Name="grilleChoixArmure" HorizontalAlignment="Left" Height="551" Margin="0,10,-2,0" VerticalAlignment="Top" Width="745">
+            <GroupBox x:Name="gboxChoixArmure" Header="Choix d'armure" HorizontalAlignment="Left" Height="454" Margin="10,1953,0,0" VerticalAlignment="Top" Width="755" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grilleChoixArmure" HorizontalAlignment="Left" Height="416" Margin="0,10,-2,0" VerticalAlignment="Top" Width="745">
                     <Label x:Name="labNomArmure" Content="Nom de l'armure:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
                     <ComboBox x:Name="cboxNomArmure" HorizontalAlignment="Left" Margin="141,14,0,0" VerticalAlignment="Top" Width="228" FontSize="14" FontWeight="Normal"/>
-                    <Label x:Name="labDescArmure" Content="Description:" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBlock x:Name="txtDescArmure" HorizontalAlignment="Left" Margin="113,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Height="106" Width="600"/>
-                    <Label x:Name="labCoutArmure" Content="Coût:" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBlock x:Name="txtCoutArmure" HorizontalAlignment="Left" Margin="60,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="107"/>
-                    <Button x:Name="btnAjoutArmure" Content="Ajouter" HorizontalAlignment="Left" Margin="424,187,0,0" VerticalAlignment="Top" Width="75" FontWeight="Normal" FontSize="14"/>
-                    <DataGrid x:Name="dtgridArmure" HorizontalAlignment="Left" Height="311" Margin="10,228,0,0" VerticalAlignment="Top" Width="725"/>
+                    <Label x:Name="labPtArmure" Content="Armure:" HorizontalAlignment="Left" Margin="424,14,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtResEnerArmure" HorizontalAlignment="Left" Margin="493,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="46"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="544,19,0,0" TextWrapping="Wrap" Text="/" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtResCineArmure" HorizontalAlignment="Left" Margin="555,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="42"/>
+                    <Label x:Name="labCoutArmure" Content="Coût:" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtCoutArmure" HorizontalAlignment="Left" Margin="60,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="107"/>
+                    <Label x:Name="labOptArmure" Content="Option:" HorizontalAlignment="Left" Margin="229,52,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <ComboBox x:Name="txtOptArmure" HorizontalAlignment="Left" Margin="294,56,0,0" VerticalAlignment="Top" Width="277" FontSize="14" FontWeight="Normal"/>
+                    <Button x:Name="btnAjoutArmure" Content="Ajouter" HorizontalAlignment="Left" Margin="635,53,0,0" VerticalAlignment="Top" Width="75" FontWeight="Normal" FontSize="14"/>
+                    <DataGrid x:Name="dtgridArmure" HorizontalAlignment="Left" Height="311" Margin="10,96,0,0" VerticalAlignment="Top" Width="725"/>
                 </Grid>
             </GroupBox>
 
             <!--Personnalisation du personnage - Véhicules-->
-            <GroupBox x:Name="gboxChoixVehi" Header="Choix de véhicule" HorizontalAlignment="Left" Height="593" Margin="10,2671,0,0" VerticalAlignment="Top" Width="755" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
-                <Grid x:Name="grilleChoixVehi" HorizontalAlignment="Left" Height="551" Margin="0,10,-2,0" VerticalAlignment="Top" Width="745">
+            <GroupBox x:Name="gboxChoixVehi" Header="Choix de véhicule" HorizontalAlignment="Left" Height="501" Margin="10,2424,0,0" VerticalAlignment="Top" Width="755" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grilleChoixVehi" HorizontalAlignment="Left" Height="457" Margin="0,10,-2,0" VerticalAlignment="Top" Width="745">
                     <Label x:Name="labNomVehi" Content="Nom de véhicule:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
                     <ComboBox x:Name="cboxNomVehi" HorizontalAlignment="Left" Margin="141,14,0,0" VerticalAlignment="Top" Width="228" FontSize="14" FontWeight="Normal"/>
-                    <Label x:Name="labDescVehi" Content="Description:" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBlock x:Name="txtDescVehi" HorizontalAlignment="Left" Margin="113,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Height="106" Width="600"/>
-                    <Label x:Name="labCoutVehi" Content="Coût:" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBlock x:Name="txtCoutVehi" HorizontalAlignment="Left" Margin="60,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="107"/>
-                    <Button x:Name="btnAjoutVehi" Content="Ajouter" HorizontalAlignment="Left" Margin="424,187,0,0" VerticalAlignment="Top" Width="75" FontWeight="Normal" FontSize="14"/>
-                    <DataGrid x:Name="dtgridVehi" HorizontalAlignment="Left" Height="311" Margin="10,228,0,0" VerticalAlignment="Top" Width="725"/>
+                    <Label x:Name="labTypeVehi" Content="Type de véhicule:" HorizontalAlignment="Left" Margin="395,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtTypeVehi" HorizontalAlignment="Left" Margin="523,15,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Height="21" Width="165"/>
+                    <Label x:Name="labCoutVehi" Content="Coût:" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtCoutVehi" HorizontalAlignment="Left" Margin="60,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="107"/>
+                    <Button x:Name="btnAjoutVehi" Content="Ajouter" HorizontalAlignment="Left" Margin="424,97,0,0" VerticalAlignment="Top" Width="75" FontWeight="Normal" FontSize="14"/>
+                    <DataGrid x:Name="dtgridVehi" HorizontalAlignment="Left" Height="311" Margin="10,138,0,0" VerticalAlignment="Top" Width="725"/>
+                    <Label x:Name="labNbrePassVehi" Content="Nombre de passager:" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtNbrePassVehi" HorizontalAlignment="Left" Margin="165,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="43"/>
+                    <Label x:Name="labManierVehi" Content="Maniabilité" HorizontalAlignment="Left" Margin="231,56,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtManierVehi" HorizontalAlignment="Left" Margin="321,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="175"/>
+                    <Label x:Name="labVitVehi" Content="Vitesse" HorizontalAlignment="Left" Margin="513,56,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtVitVehi" HorizontalAlignment="Left" Margin="584,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="83"/>
                 </Grid>
             </GroupBox>
 
             <!--Personnalisation du personnage - Robots-->
-            <GroupBox x:Name="gboxChoixRobot" Header="Choix de robots" HorizontalAlignment="Left" Height="593" Margin="10,3288,0,0" VerticalAlignment="Top" Width="755" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <GroupBox x:Name="gboxChoixRobot" Header="Choix de robots" HorizontalAlignment="Left" Height="593" Margin="10,2943,0,0" VerticalAlignment="Top" Width="755" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
                 <Grid x:Name="grilleChoixRobot" HorizontalAlignment="Left" Height="551" Margin="0,10,-2,0" VerticalAlignment="Top" Width="745">
                     <Label x:Name="labNomRobot" Content="Nom de robot:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
                     <ComboBox x:Name="cboxNomRobot" HorizontalAlignment="Left" Margin="141,14,0,0" VerticalAlignment="Top" Width="228" FontSize="14" FontWeight="Normal"/>
-                    <Label x:Name="labDescRobot" Content="Description:" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBlock x:Name="txtDescRobot" HorizontalAlignment="Left" Margin="113,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Height="106" Width="600"/>
+                    <Label x:Name="labAmeRobot" Content="Améliorations:" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock x:Name="txtAmeRobot" HorizontalAlignment="Left" Margin="121,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Height="106" Width="592"/>
                     <Label x:Name="labCoutRobot" Content="Coût:" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" FontSize="14"/>
                     <TextBlock x:Name="txtCoutRobot" HorizontalAlignment="Left" Margin="60,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="107"/>
                     <Button x:Name="btnAjoutRobot" Content="Ajouter" HorizontalAlignment="Left" Margin="424,187,0,0" VerticalAlignment="Top" Width="75" FontWeight="Normal" FontSize="14"/>
                     <DataGrid x:Name="dtgridRobot" HorizontalAlignment="Left" Height="311" Margin="10,228,0,0" VerticalAlignment="Top" Width="725"/>
                 </Grid>
             </GroupBox>
-            
-            <Button x:Name="btnValidForm" Content="Valider" HorizontalAlignment="Left" Margin="356,3898,0,0" VerticalAlignment="Top" Width="90" FontSize="16" Height="38"/>
+
+            <Button x:Name="btnValidForm" Content="Valider" HorizontalAlignment="Left" Margin="348,3554,0,0" VerticalAlignment="Top" Width="90" FontSize="16" Height="38"/>
 
         </Grid>
     </ScrollViewer>
