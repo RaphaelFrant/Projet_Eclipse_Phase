@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projet_Eclipse_Phase.Vue.FormEnrichissementBdd"
         mc:Ignorable="d"
-        Title="CrudMorphe" Height="1085.301" Width="800">
+        Title="CrudMorphe" Height="1539.301" Width="800">
     <ScrollViewer>
         <Grid Width="772">
             <Label x:Name="labGestMorphe" Content="Gestion des Morphes" HorizontalAlignment="Left" Margin="283,19,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
             <TextBlock x:Name="txtGestMorphe" HorizontalAlignment="Left" Margin="43,83,0,0" TextWrapping="Wrap" Text="Dans cette partie, vous pouvez créer, modifier ou supprimer les types de morphe disponibles pour les personnages." VerticalAlignment="Top" FontSize="14"/>
 
             <!--Boite de création de morphe-->
-            <GroupBox x:Name="grpboxCreaMorphe" Header="Création de morphe" HorizontalAlignment="Left" Height="302" Margin="43,127,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
-                <Grid x:Name="gridCreaMorphe" HorizontalAlignment="Left" Height="268" Margin="0,9,-6,-3" VerticalAlignment="Top" Width="690">
+            <GroupBox x:Name="grpboxCreaMorphe" Header="Création de morphe" HorizontalAlignment="Left" Height="306" Margin="43,127,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+                <Grid x:Name="gridCreaMorphe" HorizontalAlignment="Left" Height="268" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
                     <Label x:Name="labNomCreaMorphe" Content="Nom: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
                     <TextBox x:Name="txtNomCreaMorphe" HorizontalAlignment="Left" Height="23" Margin="65,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="257" FontSize="14" FontWeight="Normal"/>
                     <Label x:Name="labCogCreaMorphe" Content="COG:" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
@@ -49,7 +49,7 @@
             </GroupBox>
 
             <!--Boite de modification de morphe-->
-            <GroupBox x:Name="grpboxModifMorphe" Header="Modification de morphe" HorizontalAlignment="Left" Height="348" Margin="43,450,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+            <GroupBox x:Name="grpboxModifMorphe" Header="Modification de morphe" HorizontalAlignment="Left" Height="348" Margin="43,454,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
                 <Grid x:Name="gridModifMorphe" HorizontalAlignment="Left" Height="309" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
                     <Label x:Name="labChoixModifMorphe" Content="Choisissez un type de morphe:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
                     <ComboBox x:Name="cmbboxChoixModifMorphe" HorizontalAlignment="Left" Margin="225,10,0,0" VerticalAlignment="Top" Width="247" Height="29" FontSize="14" FontWeight="Normal"/>
@@ -88,8 +88,21 @@
                 </Grid>
             </GroupBox>
 
+            <!--Boite pour associer des implants à un morphe-->
+            <GroupBox x:Name="gboxAssocImp" Header="Implants associés" HorizontalAlignment="Left" Height="432" Margin="43,824,0,0" VerticalAlignment="Top" Width="696" FontSize="16" FontWeight="Bold">
+                <Grid x:Name="grilleAssocImp" HorizontalAlignment="Left" Height="394" Margin="0,10,-2,0" VerticalAlignment="Top" Width="686">
+                    <Label x:Name="labChoixMorphe" Content="Choisir un morphe:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <ComboBox x:Name="cmboxChoixMorphe" HorizontalAlignment="Left" Margin="151,14,0,0" VerticalAlignment="Top" Width="190" FontSize="14" FontWeight="Normal"/>
+                    <TextBlock x:Name="txtIdMorphe" HorizontalAlignment="Left" Margin="367,15,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14" FontWeight="Normal" Width="87"/>
+                    <Label x:Name="labChoixImp" Content="Choisir un implant à associer:" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+                    <ComboBox x:Name="cmboxChoixImp" HorizontalAlignment="Left" Margin="221,64,0,0" VerticalAlignment="Top" Width="269" FontWeight="Normal" FontSize="14"/>
+                    <Button x:Name="btnAjoutImp" Content="Ajouter" HorizontalAlignment="Left" Margin="556,64,0,0" VerticalAlignment="Top" Width="93" FontSize="14" FontWeight="Normal" Height="25"/>
+                    <DataGrid x:Name="dtgridAssocImp" HorizontalAlignment="Left" Height="272" Margin="10,106,0,0" VerticalAlignment="Top" Width="666"/>
+                </Grid>
+            </GroupBox>
+
             <!--Boite de suppression de morphe-->
-            <GroupBox x:Name="grpboxSupprMorphe" Header="Suppression de morphe" HorizontalAlignment="Left" Height="150" Margin="43,823,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
+            <GroupBox x:Name="grpboxSupprMorphe" Header="Suppression de morphe" HorizontalAlignment="Left" Height="150" Margin="43,1279,0,0" VerticalAlignment="Top" Width="696" FontWeight="Bold" FontSize="16">
                 <Grid x:Name="gridSupprMorphe" HorizontalAlignment="Left" Height="110" Margin="0,9,-6,0" VerticalAlignment="Top" Width="690">
                     <Label x:Name="labChoixSupprMorphe" Content="Choisissez un type de morphe:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
                     <ComboBox x:Name="cmbboxChoixSupprMorphe" HorizontalAlignment="Left" Margin="225,10,0,0" VerticalAlignment="Top" Width="227" FontSize="14" Height="29"/>
@@ -99,7 +112,8 @@
                     <Button x:Name="btnSupprMorphe" Content="Supprimer" HorizontalAlignment="Left" Margin="412,56,0,0" VerticalAlignment="Top" Width="141" FontSize="14" FontWeight="Normal" Height="39"/>
                 </Grid>
             </GroupBox>
-            <Button x:Name="RetourGestAppli" Content="Retour" HorizontalAlignment="Left" Height="39" Margin="320,994,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+            <Button x:Name="RetourGestAppli" Content="Retour" HorizontalAlignment="Left" Height="39" Margin="321,1453,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+
 
         </Grid>
     </ScrollViewer>
